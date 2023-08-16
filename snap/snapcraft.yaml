@@ -32,4 +32,15 @@ parts:
       - libtcl8.6
       - libtk8.6
       - libxft2
-
+      - libgdbm6
+    stage:
+      - -etc/init.d
+      - -etc/X11
+      - -usr/bin
+      - -usr/include
+      - -usr/lib/X11
+      - -usr/share/doc
+      - -usr/share/doc-base
+      - -usr/share/lintian
+      - -usr/share/man
+      - -usr/share/X11
