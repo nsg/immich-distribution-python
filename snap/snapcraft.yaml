@@ -1,6 +1,6 @@
 name: immich-distribution-python
 base: core20
-version: 3.11.4-dist1
+version: 3.11.4-dist2
 summary: Python packaged for Immich Distribution
 description: |
   Python packaged for Immich Distribution, this is not intended to be consumed directly.
@@ -21,6 +21,7 @@ parts:
       - libssl-dev
       - zlib1g-dev
       - libbz2-dev
+      - liblzma-dev
       - libreadline-dev
       - libsqlite3-dev
       - xz-utils
