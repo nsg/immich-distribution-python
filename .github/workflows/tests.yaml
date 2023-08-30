@@ -1,0 +1,20 @@
+name: Test package
+
+on:
+    push:
+        branches: [ master ]
+    pull_request:
+        branches: [ master ]
+
+jobs:
+    tests:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+
+            - uses: snapcore/action-build@v1
+            - run: snap install --dangerous *.snap
+
+            - name: Run tests
+              run: |
+                  make -C tests
